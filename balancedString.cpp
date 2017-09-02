@@ -1,7 +1,9 @@
 #include<iostream>
 #include<cstring>
 using namespace std;
+
 int top=-1;
+
 int check(string str,char stack[],int len);
 int stackSize();
 int push(char stack[],char item,int len);
@@ -14,8 +16,6 @@ int main()
     cin>>str;
     int len = str.length();
     char stack[len];
-    cout<<len<<endl<<str<<endl;
-    
     if (check(str,stack,len))
     {
         cout<<"String is balanced";
@@ -41,6 +41,7 @@ int push(char stack[],char item,int len)
         return 0;
     }
 }
+
 int pop()
 {
     if(top==-1)
@@ -53,6 +54,7 @@ int pop()
         return 0;
     }
 }
+
 int stackSize()
 {
     return top+1;
