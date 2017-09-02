@@ -1,5 +1,5 @@
 #include<iostream>
-#include<string>
+#include<cstring>
 using namespace std;
 int top=-1;
 int check(string str,char stack[],int len);
@@ -12,7 +12,7 @@ int main()
     string str;
     cout<<"Enter the string: \n";
     cin>>str;
-    int len = str.size();
+    int len = str.length();
     char stack[len];
     cout<<len<<endl<<str<<endl;
     
