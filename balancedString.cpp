@@ -1,5 +1,16 @@
+/*
+Consider the balanced parentheses problem.
+
+You have a bracket sequence made up of opening '(' and closing ')' parentheses. 
+You must check if this bracket sequence is balanced.
+
+A bracket sequence is considered balanced if for every prefix of the sequence, 
+the number of opening brackets is greater than or equal 
+to the number of closing brackets, and the total number of opening brackets is equal to the number of closing brackets.
+Source: Hackerearth
+*/
+
 #include<iostream>
-#include<cstring>
 using namespace std;
 
 int top=-1;
