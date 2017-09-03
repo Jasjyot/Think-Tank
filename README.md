@@ -1,2 +1,2 @@
 # Miscellaneous-Programming-Problems
-Solutions to common programming problems.
+Solutions to intresting common programming problems.
