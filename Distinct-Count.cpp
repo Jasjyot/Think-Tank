@@ -28,30 +28,6 @@ N space separated integers denoting the array elements.
 Output format:
 Print the required answer for each test case on a new line.
 
-Constraints: 
-1
-≤
-T
-≤
-50
-1≤T≤50
-1
-≤
-X
-,
-N
-≤
-13000
-1≤X,N≤13000
-1
-≤
-A
-[
-i
-]
-≤
-10
-9
 Source: hackerearth
 */
 
