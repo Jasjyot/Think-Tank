@@ -104,13 +104,37 @@ struct Node* findCommonRoot(struct Node* root,int x, int y)
 {
     if(x>root->data && y >root->data)
     {
-        return findCoomonRoot(root->right,x,y);
+        return findCommonRoot(root->right,x,y);
     }
-    else if()
+    else if(x<root->data && y<root->data)
     {
-        
+      return findCommonRoot(root->left,x,y);
+    }
+    else
+    {
+        return root;
+    }
+}
+
+int findMax(struct Node * parent, int x,int max) 
+{
+    if (max<parent->data)
+    {
+        max=parent->data;
     }
     
+    if(x==parent->data)
+    {
+        return max;   
+    }
+    else if(x>parent->data)
+    {
+        return findMax(parent->right,x,max);
+    }
+    else if(x<parent->data)
+    {
+        return findMax(parent->left,x,max);
+    }
 }
 
 int main()
@@ -126,11 +150,19 @@ int main()
         insert(root,data);
     }
     cin>>x>>y;
+    struct Node* parent=findCommonRoot(root,x,y);
+    int max1=findMax(parent,x,0);
+    int max2=findMax(parent,y,0);
     
-    
-    
-    
-    
+    if(max2>max1)
+    {
+        cout<<max2;
+    }
+    else
+    {
+        cout<<max1;
+    }
+
     
     
     return 0;
