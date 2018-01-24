@@ -10,7 +10,7 @@ Can you help her find this number?
 Given two strings a and b that may or may not be of the same length,
 determine the minimum number of character deletions required to make  and  anagrams.
 Any characters can be deleted from either of the strings.
-Source : Hackerrank
+Question Source : Hackerrank
 Question link: https://www.hackerrank.com/challenges/ctci-making-anagrams/problem
 */
 #include <map>
