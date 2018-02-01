@@ -1,3 +1,4 @@
+/*
 Given N, help Manmohan to print pattern upto N lines. For eg For N=6 , following pattern will be printed.
 
 1
@@ -8,7 +9,7 @@ Given N, help Manmohan to print pattern upto N lines. For eg For N=6 , following
 100001
 Source: HackerBlocks
 
-
+*/
 
 #include<iostream>
 using namespace std;
