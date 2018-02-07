@@ -1,2 +1,2 @@
-# Miscellaneous-Programming-Problems
+# Think-Tank
 Solutions to intresting common programming problems.
