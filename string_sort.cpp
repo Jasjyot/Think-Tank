@@ -1,28 +1,24 @@
 #include<iostream>
+#include<algorithm>
 #include<string>
 
 using namespace std;
 void lexicalSort(string brr[ ],int n);
-void lexicalSort(string brr[ ],int n){
-    
-    
-    int i, j;
-
-    for (i = 1; i < n; i++)
-   {
-       string key = brr[i];
-       j = i-1;
- 
-       /* Move elements of arr[0..i-1], that are
-          greater than key, to one position ahead
-          of their current position */
-       while (j >= 0 && brr[j].compare( key)   )
-       {
-           brr[j+1] = brr[j];
-           j = j-1;
-       }
-       brr[j+1] = key;
-   }
+void lexicalSort(string brr[ ],int n)
+{
+    int min,j;
+    for(int i=0;i<n-1;i++)
+    {
+        min=i;
+        for(j=i+1;j<n;j++)
+        {
+            if( (brr[min].compare(brr[j])>0) )
+            {
+                min=j;
+            }
+        }
+        swap(brr[min],brr[i]);
+    }
 }
 
 int main() {
